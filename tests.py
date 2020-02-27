@@ -32,6 +32,13 @@ class TestCase(unittest.TestCase):
         self.assertEqual(test_2, 78.539816)
         self.assertEqual(test_3, 430.052618)
 
+    def test_first_last(self):
+        test_list = [1, 5, 3, 6, 8, 9, 24, 56]
+
+        test_1 = task.first_last(test_list)
+
+        self.assertEqual(test_1, [1, 56])
+
 
 if __name__ == '__main__':
     unittest.main()

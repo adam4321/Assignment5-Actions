@@ -16,3 +16,10 @@ def firstrun():
 def circle_area(radius):
     local = (radius * radius) * math.pi
     return round(local, 6)
+
+
+def first_last(list):
+    out = []
+    out.append(list.pop(0))
+    out.append(list.pop())
+    return out
