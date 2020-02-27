@@ -15,11 +15,9 @@ class TestCase(unittest.TestCase):
         expected = "success"
         self.assertEqual(expected, task.firstrun())
 
-
     def test2(self):
         expected = "failure"
         self.assertNotEqual(expected, task.firstrun())
-
 
     def test_circle_area(self):
         test_1 = 1
