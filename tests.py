@@ -8,6 +8,7 @@ Unit test file
 
 import unittest
 import task
+from datetime import date
 
 
 class TestCase(unittest.TestCase):
@@ -38,6 +39,14 @@ class TestCase(unittest.TestCase):
         test_1 = task.first_last(test_list)
 
         self.assertEqual(test_1, [1, 56])
+
+    def test_two_dates(self):
+        date1 = date(2020, 1, 20)
+        date2 = date(2020, 2, 15)
+
+        test = task.two_dates(date1, date2)
+
+        self.assertEqual(test, 26)
 
 
 if __name__ == '__main__':

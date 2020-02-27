@@ -23,3 +23,7 @@ def first_last(list):
     out.append(list.pop(0))
     out.append(list.pop())
     return out
+
+
+def two_dates(date1, date2):
+    return (date2 - date1).days
